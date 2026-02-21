@@ -16,7 +16,7 @@
    <li>Cálculo de resultado em tempo real (Vitória, Derrota ou Empate).</li>
   <li>Placar acumulativo de pontuação.</li>
 </ol>
-
+<img width="3584" height="1702" alt="image" src="https://github.com/user-attachments/assets/8a0e3491-0270-44bd-be12-52b96da3b62b" />
 <hr>
 <h2>📂 Como rodar o projeto</h2>
 <h3>2-Navegue até a pasta do projeto.</h3>
