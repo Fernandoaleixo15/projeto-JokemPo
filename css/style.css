@@ -1,0 +1,160 @@
+/* reset geral da página */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(../assest/Jokenpo-coisa-wolverine-e-gambit.gif);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: repeat;
+}
+/* style do topo da página */
+header{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+header .logo{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 30px 30px;
+  cursor: pointer;
+}
+@keyframes moverDireita {
+    from { transform: translateX(100vw); } /* Começa fora da tela à direita */
+    to { transform: translateX(-100%); }   /* Termina fora da tela à esquerda */
+}
+header .logo{
+    animation: moverDireita 10s linear infinite;
+}
+
+header .menu-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .menu-top a{
+  display: inline-block;
+  margin: 0 55px;
+  font-size: 40px;
+  text-decoration: none;
+  cursor: pointer;
+  color: red;
+}
+header .menu-top a:hover{
+    color:#f4dc02
+}
+/* style do main da página */
+.container{
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container h1{
+  color: #fff;
+  text-align: center;
+  font-size: 45px;
+  margin-top: 15 0px;
+}
+.container h1:hover{
+  color: rgb(245, 213, 11);
+  font-size: 35px;
+}
+.container .butons{
+  margin-top: 10px;
+  gap: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.container .but-jodo{
+  font-size: 80px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+.container .but-jodo:hover{
+    opacity: 0.7;
+}
+#rock{
+  background-color: #a200ff;
+}
+#paper{
+   background-color: #9ee01a;
+}
+#scissors{
+   background-color: #7dbeed;
+}
+p{
+  display: flex;
+  font-size: 25px;
+  color: #5a4c4cc4;
+  margin: 30px 0;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  opacity: 0.7;
+  font-weight: 900;
+}
+.your-score span{
+  color: #000;
+  font-size: 30px;
+  margin-left: 8px;
+  color: rgb(0, 0, 97);
+}
+.machine-score span{
+  color: #000;
+  font-size: 30px;
+  margin-left: 6px;
+  color: red;
+}
+/* Reset das media query */
+@media (max-width: 600px){
+  body{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+  }
+  header .logo{
+    width: 50px;
+    height: 50px;
+    margin: 10px 5px;
+  }
+
+  header .menu-top a{
+    font-size: 30px;
+   margin: 15px 20px;
+  }
+
+  .container h1{
+    font-size: 35px;
+    margin-top: 40px;
+  }
+  .container h1:hover{
+    font-size: 25px;
+  }
+  .container .butons{
+    margin-top: 150px;
+    margin-left: 60px;
+  }
+  .container .but-jodo{
+    font-size: 70px;
+  }
+  .your-score span{
+    font-size: 25px;
+    margin-left: 50px;
+  }
+  .machine-score span{
+    font-size: 25px;
+  }
+}
