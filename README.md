@@ -21,6 +21,7 @@
 <hr>
 <h2>📂 Como rodar o projeto</h2>
 <h3>2-Navegue até a pasta do projeto.</h3>
+https://fernandoaleixo15.github.io/projeto-JokemPo/
 <h3>3-Abra o arquivo index.html em seu navegador de preferência.</h3>
 <hr>
 <h2>📝 Licença</h2>
